@@ -47,7 +47,7 @@ def custom_index(request, conn=None, **kwargs):
 
     active_group = request.session.get('active_group') or conn.getEventContext().groupId
     group = conn.getObject("ExperimenterGroup", active_group)
-    members, leaders = group.groupSummary(active_group)
+    leaders, members = group.groupSummary()
     leaders.sort(key=lambda x: x.getOmeName() and x.getOmeName().lower())
     context["courses"]  = leaders
     context['template'] = 'virtualmicroscope/start.html'
