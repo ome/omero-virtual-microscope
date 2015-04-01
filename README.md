@@ -36,4 +36,4 @@ Redirect to post login page
 
     $ bin/omero config set omero.web.login_redirect '{"redirect": ["webindex"], "viewname": "webindex_custom"}'
 
-Now start up OMERO.web as normal in your development environment.
+Now start up OMERO.web as normal.
