@@ -24,7 +24,7 @@
 #
 
 from django.conf.urls import patterns
-from omeroweb.virtualmicroscope import views
+from virtualmicroscope import views
 
 urlpatterns = patterns('',
 )
