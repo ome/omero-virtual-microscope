@@ -24,9 +24,5 @@
 #
 
 from django.conf.urls import patterns
-from virtualmicroscope import views
 
-urlpatterns = patterns('',
-)
-
-
+urlpatterns = patterns('',)
