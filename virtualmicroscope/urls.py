@@ -24,5 +24,6 @@
 #
 
 from django.conf.urls import patterns
+from virtualmicroscope import views  # noqa
 
 urlpatterns = patterns('',)
