@@ -23,15 +23,6 @@
 # Version: 1.0
 #
 
-import os
-import sys
-import traceback
-from glob import glob
-
-from django.conf import settings
-from django.template import loader as template_loader
-from django.template import RequestContext as Context
-from django.core.urlresolvers import reverse
 from django.views.decorators.cache import never_cache
 
 from omero_version import omero_version
@@ -39,17 +30,19 @@ from omero_version import omero_version
 from omeroweb.webstart.decorators import login_required, render_response
 import omeroweb.webstart.views
 
+
 @never_cache
 @login_required()
 @render_response()
 def custom_index(request, conn=None, **kwargs):
     context = {"version": omero_version}
 
-    active_group = request.session.get('active_group') or conn.getEventContext().groupId
+    active_group = (request.session.get('active_group') or
+                    conn.getEventContext().groupId)
     group = conn.getObject("ExperimenterGroup", active_group)
     leaders, members = group.groupSummary()
     leaders.sort(key=lambda x: x.getOmeName() and x.getOmeName().lower())
-    context["courses"]  = leaders
+    context["courses"] = leaders
     context['template'] = 'virtualmicroscope/start.html'
     return context
 
