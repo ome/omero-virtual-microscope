@@ -27,8 +27,13 @@ from django.views.decorators.cache import never_cache
 
 from omero_version import omero_version
 
-from omeroweb.webstart.decorators import login_required, render_response
-import omeroweb.webstart.views
+# backwords compatibility. webstart was removed in 5.2
+try:
+    from omeroweb.webstart.decorators import login_required, render_response
+    import omeroweb.webstart.views
+except:
+    from omeroweb.webclient.decorators import login_required, render_response
+    import omeroweb.webclient.views
 
 
 @never_cache
@@ -46,4 +51,7 @@ def custom_index(request, conn=None, **kwargs):
     context['template'] = 'virtualmicroscope/start.html'
     return context
 
-omeroweb.webstart.views.custom_index = custom_index
+try:
+    omeroweb.webstart.views.custom_index = custom_index
+except:
+    omeroweb.webclient.views.custom_index = custom_index
