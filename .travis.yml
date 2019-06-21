@@ -11,4 +11,6 @@ cache: pip
 
 before_install: pip install flake8
 
-script: flake8 -v .
+script:
+- flake8 -v .
+- pip install .
