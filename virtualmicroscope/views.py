@@ -31,7 +31,7 @@ from omero_version import omero_version
 try:
     from omeroweb.webstart.decorators import login_required, render_response
     import omeroweb.webstart.views
-except:
+except ImportError:
     from omeroweb.webclient.decorators import login_required, render_response
     import omeroweb.webclient.views
 
@@ -51,7 +51,8 @@ def custom_index(request, conn=None, **kwargs):
     context['template'] = 'virtualmicroscope/start.html'
     return context
 
+
 try:
     omeroweb.webstart.views.custom_index = custom_index
-except:
+except AttributeError:
     omeroweb.webclient.views.custom_index = custom_index
