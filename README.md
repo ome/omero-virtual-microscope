@@ -5,24 +5,12 @@ Virtual Microscope OMERO.web extension application
 Requirements
 ============
 
-* OMERO 5.1.0 or later
+* OMERO 5.4.0 or later
 
 Installation
 ============
 
-Clone
-
-    $ git clone git://github.com/openmicroscopy/virtual-microscope.git virtual-microscope
-
-or download
-
-    $ wget -O master.zip https://github.com/openmicroscopy/virtual-microscope/zipball/master
-    $ unzip master.zip
-    $ mv openmicroscopy-virtual-microscope-* virtual-microscope
-
-Add virtual-microscope to PYTHONPATH:
-
-    $ export PYTHONPATH=/path/to/virtual-microscope:$PYTHONPATH
+    $ pip install https://github.com/ome/virtual-microscope/archive/master.zip
 
 Add virtual-microscope custom app to your installed web apps:
 
