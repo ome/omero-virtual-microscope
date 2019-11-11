@@ -10,7 +10,7 @@ Requirements
 Installation
 ============
 
-    $ pip install https://github.com/ome/virtual-microscope/archive/master.zip
+    $ pip install omero-virtual-microscope
 
 Add virtual-microscope custom app to your installed web apps:
 
