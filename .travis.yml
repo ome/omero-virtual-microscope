@@ -1,5 +1,5 @@
+---
 language: python
-
 python: 2.7
 
 # This (sudo: false) is needed to "run on container-based infrastructure" on
@@ -12,5 +12,12 @@ cache: pip
 before_install: pip install flake8
 
 script:
-- flake8 -v .
-- pip install .
+  - flake8 -v .
+  - pip install .
+
+deploy:
+  provider: pypi
+  user: $PYPI_USER
+  password: $PYPI_PASSWORD
+  on:
+    tags: true
