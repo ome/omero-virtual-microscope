@@ -23,7 +23,6 @@
 # Version: 1.0
 #
 
-from django.conf.urls import patterns
 from virtualmicroscope import views  # noqa
 
-urlpatterns = patterns('',)
+urlpatterns = []
