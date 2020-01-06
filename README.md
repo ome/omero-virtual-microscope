@@ -22,6 +22,6 @@ NB: note that double quotes are wrapped by single quotes. Windows users will nee
 
 Redirect to post-login page
 
-    $ bin/omero config set omero.web.login_redirect '{"redirect": ["webindex"], "viewname": "webindex_custom", "query_string": "", "args": []}'
+    $ bin/omero config set omero.web.login_redirect '{"redirect": ["webindex"], "viewname": "webindex_custom"}'
 
 Now start up OMERO.web as normal.
