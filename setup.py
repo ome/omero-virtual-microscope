@@ -56,4 +56,5 @@ setup(name="omero-virtual-microscope",
       keywords=['OMERO.web', 'plugin'],
       include_package_data=True,
       zip_safe=False,
+      install_requires=['omero-web>=5.6.dev7'],
       )
