@@ -36,7 +36,7 @@ setup(name="omero-virtual-microscope",
       packages=find_packages(exclude=['ez_setup']),
       version=VERSION,
       description="Virtual Microscope OMERO.web extension application",
-      long_description=read('README.md'),
+      long_description=read('README.rst'),
       classifiers=[
           'Environment :: Web Environment',
           'Framework :: Django',
