@@ -5,7 +5,7 @@ Virtual Microscope OMERO.web extension application
 Requirements
 ============
 
-* OMERO 5.6.0 or later
+* OMERO.web 5.6.0 or later
 
 Installation
 ============
