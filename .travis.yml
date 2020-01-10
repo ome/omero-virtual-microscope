@@ -1,6 +1,6 @@
 ---
 language: python
-python: 2.7
+python: 3.6
 
 # This (sudo: false) is needed to "run on container-based infrastructure" on
 # which cache: is available
@@ -19,5 +19,6 @@ deploy:
   provider: pypi
   user: $PYPI_USER
   password: $PYPI_PASSWORD
+  distributions: sdist bdist_wheel
   on:
     tags: true
