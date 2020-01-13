@@ -29,7 +29,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-VERSION = '1.0.2.dev0'
+VERSION = '1.1.0.dev0'
 
 
 setup(name="omero-virtual-microscope",
@@ -56,6 +56,9 @@ setup(name="omero-virtual-microscope",
       keywords=['OMERO.web', 'plugin'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['omero-web>=5.6.dev7'],
+      install_requires=[
+          'omero-web>=5.6.0',
+          'Django>=1.11,<2.0',
+      ],
       python_requires='>=3',
       )
