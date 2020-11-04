@@ -1,3 +1,9 @@
+.. image:: https://github.com/ome/omero-virtual-microscope/workflows/OMERO/badge.svg
+    :target: https://github.com/ome/omero-virtual-microscope/actions
+
+.. image:: https://badge.fury.io/py/omero-virtual-microscope.svg
+    :target: https://badge.fury.io/py/omero-virtual-microscope
+
 OMERO.web Virtual Microscope
 ============================
 Virtual Microscope OMERO.web extension application
