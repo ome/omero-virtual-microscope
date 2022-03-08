@@ -57,8 +57,7 @@ setup(name="omero-virtual-microscope",
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'omero-web>=5.6.0,<5.14.0',
-          'Django>=1.11,<2.0',
+          'omero-web>=5.6.0',
       ],
       python_requires='>=3',
       )
