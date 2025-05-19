@@ -4,7 +4,7 @@
 .. image:: https://badge.fury.io/py/omero-virtual-microscope.svg
     :target: https://badge.fury.io/py/omero-virtual-microscope
 
-OMERO.web Virtual Microscope 
+OMERO.web Virtual Microscope
 ============================
 Virtual Microscope OMERO.web extension application
 
