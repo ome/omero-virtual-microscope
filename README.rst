@@ -16,17 +16,19 @@ Requirements
 Installation
 ------------
 
+To install the application, run::
+
     $ pip install omero-virtual-microscope
 
-Add virtual-microscope custom app to your installed web apps:
+Add the virtual-microscope custom app to your installed web apps::
 
     $ omero config append omero.web.apps '"virtualmicroscope"'
 
-N.B.: note that double quotes are wrapped by single quotes. Windows users will need to do
+N.B.: note that double quotes are wrapped by single quotes. Windows users will need to do::
 
     $ omero config append omero.web.apps "\"virtualmicroscope\""
 
-Redirect to post-login page
+Redirect to post-login page::
 
     $ omero config set omero.web.login_redirect '{"redirect": ["webindex"], "viewname": "webindex_custom"}'
 
@@ -59,4 +61,4 @@ licensed under the terms of the GNU General Public License (GPL) v2 or later.
 Copyright
 ---------
 
-2019-2020, The Open Microscopy Environment
+2019-2025, The Open Microscopy Environment
